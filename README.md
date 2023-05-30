@@ -5,7 +5,9 @@
 ### Cách tải xuống & sử dụng:
 
 1.  Tải file GPA_Calculator.exe về máy
-    Các bạn có thể tải tại **[đây]** (https://github.com/Normal-205/ULSA-IT-GPA-Calculator/releases/download/v2.1.0-gpa_cal/GPA_Calculator.exe)
+
+> Các bạn có thể tải tại đây: [GPA_Calculator.exe](https://github.com/Normal-205/ULSA-IT-GPA-Calculator/releases/download/v2.1.0-gpa_cal/GPA_Calculator.exe)
+
 2.  Chạy file GPA_Calculator.exe
 3.  Nhập các thông tin cần thiết và tận hưởng thành quả :v
 
