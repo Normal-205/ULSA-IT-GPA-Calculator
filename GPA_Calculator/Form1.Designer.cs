@@ -104,7 +104,6 @@
             this.midMarkTextBox.Name = "midMarkTextBox";
             this.midMarkTextBox.Size = new System.Drawing.Size(54, 29);
             this.midMarkTextBox.TabIndex = 1;
-            this.midMarkTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.midMarkTextBox_KeyDown);
             this.midMarkTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
             // midMarkLabel
@@ -274,7 +273,6 @@
             this.lastMarkTextBox.Name = "lastMarkTextBox";
             this.lastMarkTextBox.Size = new System.Drawing.Size(54, 29);
             this.lastMarkTextBox.TabIndex = 2;
-            this.lastMarkTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lastMarkTextBox_KeyDown);
             this.lastMarkTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
             // creditsTextBox
@@ -285,7 +283,6 @@
             this.creditsTextBox.Name = "creditsTextBox";
             this.creditsTextBox.Size = new System.Drawing.Size(54, 29);
             this.creditsTextBox.TabIndex = 3;
-            this.creditsTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.creditsTextBox_KeyDown);
             this.creditsTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
             // creditsLabel

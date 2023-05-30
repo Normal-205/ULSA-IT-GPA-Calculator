@@ -134,7 +134,8 @@ namespace FirstProject
         }
         private void delete_Click(object sender, EventArgs e)
         {
-
+            //clear the listbox
+            summaryListBox.Items.Clear();
             //MessageBox.Show("Bruh WTF", "Bye bye 😘", MessageBoxButtons.OK);
             if (selectedRowIndex >= 0 && selectedRowIndex < marksList.Count)
             {
@@ -151,18 +152,6 @@ namespace FirstProject
                 selectedRowIndex = -1;
             }
         }
-        /*
-        private void button_Click(object sender, EventArgs e)
-        {
-            if (listMarkListBox.SelectedItem != null)
-            {
-                string selectedItem = listMarkListBox.SelectedItem.ToString();
-                inputList.Remove(selectedItem);
-                listMarkListBox.DataSource = null;
-                listMarkListBox.DataSource = inputList;
-            }
-        }
-        */
         private void MarkTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.') //validate textbox only take numeric value
@@ -207,7 +196,7 @@ namespace FirstProject
 
         private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            /*
+            
             DialogResult confirmResult = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Warning 🙄", MessageBoxButtons.YesNo);
             if (confirmResult != DialogResult.Yes)
             {
@@ -218,41 +207,13 @@ namespace FirstProject
                 MessageBox.Show("Cảm ơn bạn đã sử dụng dịch vụ của ULSA IT", "Bye bye 😘", MessageBoxButtons.OK);
                 // Clean up any resources or perform other actions before exiting
             }
-            */
-        }
-
-        private void midMarkTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            /*
-            if (e.KeyCode == Keys.Tab)
-            {
-                e.SuppressKeyPress = true; // Prevent the default Tab key behavior
-                lastMarkTextBox.Focus(); // Move focus to textbox2
-            }
-            */
-        }
-
-        private void lastMarkTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            /*
-            if (e.KeyCode == Keys.Tab)
-            {
-                e.SuppressKeyPress = true; // Prevent the default Tab key behavior
-                creditsTextBox.Focus(); // Move focus to textbox3
-            } */
-        }
-
-        private void creditsTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            /* if (e.KeyCode == Keys.Tab)
-             {
-                 e.SuppressKeyPress = true; // Prevent the default Tab key behavior
-                 insertDataButton.Focus(); // move focus to insert button
-             } */
+            
         }
 
         private void summaryButton_Click(object sender, EventArgs e)
         {
+            //clear the listbox
+            summaryListBox.Items.Clear();
             double totalCreditsMark10 = 0;
             double totalCreditsMark4 = 0;
             double sumOfFinalMark10 = 0;
