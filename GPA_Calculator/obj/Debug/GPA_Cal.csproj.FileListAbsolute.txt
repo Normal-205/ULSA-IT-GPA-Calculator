@@ -1,0 +1,11 @@
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\bin\Debug\FirstProject.exe.config
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\bin\Debug\FirstProject.exe
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\bin\Debug\FirstProject.pdb
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\GPA_Cal.csproj.AssemblyReference.cache
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\GPA_Cal.csproj.SuggestedBindingRedirects.cache
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\FirstProject.Dashboard.resources
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\FirstProject.Properties.Resources.resources
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\GPA_Cal.csproj.GenerateResource.cache
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\GPA_Cal.csproj.CoreCompileInputs.cache
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\FirstProject.exe
+D:\Learning\NCKH\GPA_Calculator\GPA_Calculator\obj\Debug\FirstProject.pdb
