@@ -28,9 +28,8 @@
 5.  Nhớ Like & Follow page ULSAIT: https://www.facebook.com/ULSA.IT
 6.  Nhớ Like & Follow page ULSAIT: https://www.facebook.com/ULSA.IT
 7.  Nhớ Like & Follow page ULSAIT: https://www.facebook.com/ULSA.IT
-    Cái gì quan trọng phải nói 3 lần =))))))
-8.  Mọi ý kiến đóng góp xin gửi về Page ULSA IT
-    ==> Link: m.me/ULSAIT
+    > Cái gì quan trọng phải nói 3 lần =))))))
+8.  Mọi ý kiến đóng góp xin gửi về Page ULSA IT ==> [Contact Us](https://www.m.me/ULSA.IT/)
 9.  Bản quyền hoàn toàn thuộc về dàn admin của Page, các bạn có thể clone source code về để tuỳ biến cho riêng mình
 
 # ULSA-IT-GPA-Calculator Ver 2.1.0
@@ -40,3 +39,10 @@
 - Xoá bỏ các môn học tuỳ ý, không cần phải xoá hết rồi nhập lại
 - Tuỳ biến lại giao diện
 - Bây giờ các bạn có thể ấn phím Enter để thêm môn mới
+
+### Lộ trình phát triển:
+
+- [x] Update giao diện
+- [x] Update công thức tính điểm
+- [ ] Update thêm tính năng nhập điểm tự động từ file Excel
+- [ ] Update thêm tính năng nhập điểm tự động khi đăng nhập qua tài khoản ULSA
