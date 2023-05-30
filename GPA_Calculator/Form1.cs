@@ -154,15 +154,19 @@ namespace FirstProject
         }
         private void MarkTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.') //validate textbox only take numeric value
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',') //validate textbox only take numeric value
             {
                 e.Handled = true;
             }
+            //prevent user from entering a decimal point if one already exists
             else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains('.'))
             {
                 e.Handled = true;
             }
-
+            else if (e.KeyChar == ',' && ((TextBox)sender).Text.Contains(','))
+            {
+                e.Handled = true;
+            }
             if (e.KeyChar == (char)Keys.Back) //set for the backspace key
             {
                 TextBox textBox = (TextBox)sender; // Cast the sender object to TextBox
