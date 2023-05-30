@@ -92,7 +92,7 @@
             this.listMarkListBox.Location = new System.Drawing.Point(11, 31);
             this.listMarkListBox.Margin = new System.Windows.Forms.Padding(2);
             this.listMarkListBox.Name = "listMarkListBox";
-            this.listMarkListBox.Size = new System.Drawing.Size(361, 165);
+            this.listMarkListBox.Size = new System.Drawing.Size(378, 165);
             this.listMarkListBox.TabIndex = 8;
             this.listMarkListBox.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
@@ -153,7 +153,7 @@
             this.copyrightLabel.AutoSize = true;
             this.copyrightLabel.BackColor = System.Drawing.Color.Transparent;
             this.copyrightLabel.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyrightLabel.Location = new System.Drawing.Point(70, 619);
+            this.copyrightLabel.Location = new System.Drawing.Point(76, 637);
             this.copyrightLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.copyrightLabel.Name = "copyrightLabel";
             this.copyrightLabel.Size = new System.Drawing.Size(337, 40);
@@ -166,7 +166,7 @@
             this.ulsaitLinkLabel.AutoSize = true;
             this.ulsaitLinkLabel.BackColor = System.Drawing.Color.Transparent;
             this.ulsaitLinkLabel.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ulsaitLinkLabel.Location = new System.Drawing.Point(411, 619);
+            this.ulsaitLinkLabel.Location = new System.Drawing.Point(417, 637);
             this.ulsaitLinkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ulsaitLinkLabel.Name = "ulsaitLinkLabel";
             this.ulsaitLinkLabel.Size = new System.Drawing.Size(159, 40);
@@ -181,7 +181,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(574, 619);
+            this.label1.Location = new System.Drawing.Point(580, 637);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(280, 40);
@@ -199,7 +199,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(611, 222);
+            this.groupBox1.Size = new System.Drawing.Size(628, 222);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Các Môn Học";
@@ -209,7 +209,7 @@
             this.listResultListBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listResultListBox.FormattingEnabled = true;
             this.listResultListBox.ItemHeight = 23;
-            this.listResultListBox.Location = new System.Drawing.Point(376, 31);
+            this.listResultListBox.Location = new System.Drawing.Point(393, 31);
             this.listResultListBox.Margin = new System.Windows.Forms.Padding(2);
             this.listResultListBox.Name = "listResultListBox";
             this.listResultListBox.Size = new System.Drawing.Size(225, 165);
@@ -221,7 +221,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.Location = new System.Drawing.Point(353, 494);
+            this.panel1.Location = new System.Drawing.Point(359, 512);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
@@ -232,7 +232,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Location = new System.Drawing.Point(353, 494);
+            this.panel2.Location = new System.Drawing.Point(359, 512);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 0);
@@ -307,7 +307,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(611, 222);
+            this.groupBox2.Size = new System.Drawing.Size(628, 222);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tổng Kết";
@@ -321,7 +321,7 @@
             this.summaryListBox.Location = new System.Drawing.Point(11, 31);
             this.summaryListBox.Margin = new System.Windows.Forms.Padding(2);
             this.summaryListBox.Name = "summaryListBox";
-            this.summaryListBox.Size = new System.Drawing.Size(590, 165);
+            this.summaryListBox.Size = new System.Drawing.Size(607, 165);
             this.summaryListBox.TabIndex = 9;
             // 
             // label2
@@ -343,7 +343,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(696, 282);
+            this.label3.Location = new System.Drawing.Point(713, 285);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(221, 22);
@@ -357,7 +357,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1304, 668);
+            this.ClientSize = new System.Drawing.Size(1317, 705);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.copyrightLabel);

@@ -12,6 +12,7 @@ using TextBox = System.Windows.Forms.TextBox;
 
 namespace FirstProject
 {
+   
     public partial class Dashboard : Form
     {
         private List<Tuple<double, double, double, double, double>> marksList = new List<Tuple<double, double, double, double, double>>();
@@ -26,9 +27,9 @@ namespace FirstProject
         }
         private void insertDataButton_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(midMarkTextBox.Text, out double midScore) && double.TryParse(lastMarkTextBox.Text, out double lastScore) && double.TryParse(creditsTextBox.Text, out double credits))
+            if (double.TryParse(midMarkTextBox.Text, out double midScore) && double.TryParse(lastMarkTextBox.Text, out double lastScore) && int.TryParse(creditsTextBox.Text, out int credits))
             {
-                if (midScore >= 0 && midScore <= 10 && lastScore >= 0 && lastScore <= 10 && credits > 0 && credits < 7)
+                if (midScore >= 0 && midScore <= 10 && lastScore >= 0 && lastScore <= 10 && credits > 0 && credits <= 10)
                 {
                     double finalMark10 = (midScore * 0.4) + (lastScore * 0.6);
                     double roundFinalMark10 = Math.Round(finalMark10, 2);
@@ -95,7 +96,7 @@ namespace FirstProject
             foreach (var mark in marksList)
             {
                 //print out the list of marks include the count of the list and the mid and last mark
-                string item = $"#{i} ĐQT: {mark.Item1} Điểm CK: {mark.Item2} Số Tín: {mark.Item3} ";
+                string item = $"#{i}  ĐQT: {mark.Item1}   Điểm CK: {mark.Item2}   Số Tín: {mark.Item3} ";
                 listMarkListBox.Items.Add(item);
                 i++;
             }
@@ -105,12 +106,13 @@ namespace FirstProject
             listResultListBox.Items.Clear();
             foreach (var mark in marksList)
             {
-                int desiredWidth = 5;
+                int desiredWidth = 10;
 
                 string formattedFinalMark10 = $"Hệ 10: {(mark.Item4 % 1 == 0 ? mark.Item4.ToString("F0") : mark.Item4.ToString("F2")).PadRight(desiredWidth)}";
                 string formattedFinalMark4 = $"Hệ 4: {(mark.Item5 % 1 == 0 ? mark.Item5.ToString("F0") : mark.Item5.ToString("F1")).PadRight(desiredWidth)}";
-
-                string result = $"{formattedFinalMark10}{formattedFinalMark4}";
+                //something just to be tested
+                string res1 = formattedFinalMark10.ToLength(15);
+                string result = $"{res1} {formattedFinalMark4}";
                 listResultListBox.Items.Add(result);
                 /* old code
                  * string item = $"Hệ 10: {mark.Item4} Hệ 4: {mark.Item5}";
@@ -145,7 +147,6 @@ namespace FirstProject
 
                 foreach (var mark in marksList)
                 {
-                    string item = $"Mid Mark: {mark.Item1}, Last Mark: {mark.Item2}, Sum: {mark.Item3}";
                     UpdateMarksListBox();
                     UpdateResultListBox();
                 }
@@ -154,11 +155,12 @@ namespace FirstProject
         }
         private void MarkTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',') //validate textbox only take numeric value
+            //validate textbox only take numeric value
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',')
             {
                 e.Handled = true;
             }
-            //prevent user from entering a decimal point if one already exists
+            //prevent user from entering a dot or decimal point if one already exists
             else if (e.KeyChar == '.' && ((TextBox)sender).Text.Contains('.'))
             {
                 e.Handled = true;
@@ -167,6 +169,7 @@ namespace FirstProject
             {
                 e.Handled = true;
             }
+            //setting for the backspace key
             if (e.KeyChar == (char)Keys.Back) //set for the backspace key
             {
                 TextBox textBox = (TextBox)sender; // Cast the sender object to TextBox
@@ -177,10 +180,20 @@ namespace FirstProject
                 }
                 e.Handled = true;
             }
+            //validate for user to only type 4 characters
+            TextBox validateMaxLength = (TextBox)sender;
+            int maxLength = 4; // Set the desired maximum length
+            if (validateMaxLength.Text.Length >= maxLength && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancel the key press event
+            }
         }
 
         private void resetButton_Click(object sender, EventArgs e)
         {
+            midMarkTextBox.Text = "";
+            lastMarkTextBox.Text = "";
+            creditsTextBox.Text = "";
             listMarkListBox.Items.Clear();
             listMarkListBox.Items.Clear();
             listResultListBox.Items.Clear();
@@ -200,7 +213,7 @@ namespace FirstProject
 
         private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
             DialogResult confirmResult = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Warning 🙄", MessageBoxButtons.YesNo);
             if (confirmResult != DialogResult.Yes)
             {
@@ -211,31 +224,51 @@ namespace FirstProject
                 MessageBox.Show("Cảm ơn bạn đã sử dụng dịch vụ của ULSA IT", "Bye bye 😘", MessageBoxButtons.OK);
                 // Clean up any resources or perform other actions before exiting
             }
-            
+
         }
 
         private void summaryButton_Click(object sender, EventArgs e)
         {
-            //clear the listbox
-            summaryListBox.Items.Clear();
-            double totalCreditsMark10 = 0;
-            double totalCreditsMark4 = 0;
-            double sumOfFinalMark10 = 0;
-            double sumOfFinalMark4 = 0;
-            double totalCredits = 0;
-            foreach (var mark in marksList)
+            //check if the list is empty
+            if (marksList.Count == 0)
             {
-                totalCredits += mark.Item3;
-                totalCreditsMark10 = mark.Item3 * mark.Item4;
-                totalCreditsMark4 = mark.Item3 * mark.Item5;
-                sumOfFinalMark10 += totalCreditsMark10;
-                sumOfFinalMark4 += totalCreditsMark4;
+                MessageBox.Show("Chưa nhập điểm mà đã đòi tính???", "Warning 🙄", MessageBoxButtons.OK);
+                return;
+            }
+            else
+            {
+                //clear the listbox
+                summaryListBox.Items.Clear();
+                double totalCreditsMark10 = 0;
+                double totalCreditsMark4 = 0;
+                double sumOfFinalMark10 = 0;
+                double sumOfFinalMark4 = 0;
+                double totalCredits = 0;
+                foreach (var mark in marksList)
+                {
+                    totalCredits += mark.Item3;
+                    totalCreditsMark10 = mark.Item3 * mark.Item4;
+                    totalCreditsMark4 = mark.Item3 * mark.Item5;
+                    sumOfFinalMark10 += totalCreditsMark10;
+                    sumOfFinalMark4 += totalCreditsMark4;
+                }
+
+                double averageMark10 = Math.Round(sumOfFinalMark10 / totalCredits, 2);
+                double averageMark4 = Math.Round(sumOfFinalMark4 / totalCredits, 2);
+                string item = $"Tổng tín chỉ: {totalCredits}\tĐTB hệ 10: {averageMark10}\tĐTB hệ 4: {averageMark4}";
+                summaryListBox.Items.Add(item);
             }
 
-            double averageMark10 = Math.Round(sumOfFinalMark10 / totalCredits, 2);
-            double averageMark4 = Math.Round(sumOfFinalMark4 / totalCredits, 2);
-            string item = $"Tổng số tín chỉ: {totalCredits} ĐTB hệ 10: {averageMark10} ĐTB hệ 4: {averageMark4}";
-            summaryListBox.Items.Add(item);
+        }
+    }
+    public static class StringExtensions
+    {
+        public static string ToLength(this string self, int length)
+        {
+            if (self == null)
+                return null;
+
+            return self.Length > length ? self.Substring(0, length) : self.PadRight(length);
         }
     }
 }
