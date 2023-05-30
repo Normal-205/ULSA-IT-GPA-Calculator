@@ -1,6 +1,6 @@
 # ULSA-IT-GPA-Calculator Ver 2.0
 
-##Phần mềm tính điểm dành riêng cho sinh viên ULSA
+## Phần mềm tính điểm dành riêng cho sinh viên ULSA
 
 ### Cách sử dụng:
 
@@ -8,7 +8,7 @@
 2.  Chạy file GPA_Calculator.exe
 3.  Nhập các thông tin cần thiết và tận hưởng thành quả :v
 
-###Một số lưu ý:
+### Một số lưu ý:
 
 1. Điểm của ULSA được tính bằng công thức: 40% ĐQT + 60% Điểm thi
 2. Đối với các môn thể chất, quân sự, chuẩn đầu ra sẽ không tính vào GPA
