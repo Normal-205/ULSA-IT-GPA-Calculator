@@ -2,7 +2,7 @@
 
 ## Phần mềm tính điểm dành riêng cho sinh viên ULSA
 ## Giao diện phần mềm
-![AppPreview](https://user-images.githubusercontent.com/73392859/241853941-26e399af-3661-42d2-8230-d69863c3b203.png)
+![AppPreview](https://github.com/Normal-205/ULSA-IT-GPA-Calculator/assets/73392859/8d27ca1e-c501-4733-ba27-35fe4f1bc50b)
 ### Cách tải xuống & sử dụng:
 
 1.  Tải file GPA_Calculator.exe về máy
