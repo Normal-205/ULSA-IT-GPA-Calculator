@@ -61,10 +61,10 @@
             this.insertDataButton.BackColor = System.Drawing.Color.White;
             this.insertDataButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.insertDataButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insertDataButton.Location = new System.Drawing.Point(38, 224);
+            this.insertDataButton.Location = new System.Drawing.Point(48, 280);
             this.insertDataButton.Margin = new System.Windows.Forms.Padding(2);
             this.insertDataButton.Name = "insertDataButton";
-            this.insertDataButton.Size = new System.Drawing.Size(170, 64);
+            this.insertDataButton.Size = new System.Drawing.Size(212, 80);
             this.insertDataButton.TabIndex = 4;
             this.insertDataButton.Text = "Nhập Điểm";
             this.insertDataButton.UseVisualStyleBackColor = false;
@@ -76,10 +76,10 @@
             this.lbNormal.BackColor = System.Drawing.Color.Transparent;
             this.lbNormal.Font = new System.Drawing.Font("Times New Roman", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNormal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbNormal.Location = new System.Drawing.Point(297, 1);
+            this.lbNormal.Location = new System.Drawing.Point(373, 9);
             this.lbNormal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNormal.Name = "lbNormal";
-            this.lbNormal.Size = new System.Drawing.Size(349, 41);
+            this.lbNormal.Size = new System.Drawing.Size(432, 52);
             this.lbNormal.TabIndex = 11;
             this.lbNormal.Text = "Phần Mềm Tính GPA";
             this.lbNormal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,21 +88,21 @@
             // 
             this.listMarkListBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listMarkListBox.FormattingEnabled = true;
-            this.listMarkListBox.ItemHeight = 23;
-            this.listMarkListBox.Location = new System.Drawing.Point(11, 31);
+            this.listMarkListBox.ItemHeight = 29;
+            this.listMarkListBox.Location = new System.Drawing.Point(14, 39);
             this.listMarkListBox.Margin = new System.Windows.Forms.Padding(2);
             this.listMarkListBox.Name = "listMarkListBox";
-            this.listMarkListBox.Size = new System.Drawing.Size(378, 165);
+            this.listMarkListBox.Size = new System.Drawing.Size(472, 178);
             this.listMarkListBox.TabIndex = 8;
             this.listMarkListBox.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
             // midMarkTextBox
             // 
             this.midMarkTextBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.midMarkTextBox.Location = new System.Drawing.Point(195, 50);
+            this.midMarkTextBox.Location = new System.Drawing.Point(244, 62);
             this.midMarkTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.midMarkTextBox.Name = "midMarkTextBox";
-            this.midMarkTextBox.Size = new System.Drawing.Size(54, 29);
+            this.midMarkTextBox.Size = new System.Drawing.Size(66, 34);
             this.midMarkTextBox.TabIndex = 1;
             this.midMarkTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
@@ -112,10 +112,10 @@
             this.midMarkLabel.BackColor = System.Drawing.Color.Transparent;
             this.midMarkLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.midMarkLabel.ForeColor = System.Drawing.Color.Black;
-            this.midMarkLabel.Location = new System.Drawing.Point(34, 55);
+            this.midMarkLabel.Location = new System.Drawing.Point(42, 69);
             this.midMarkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.midMarkLabel.Name = "midMarkLabel";
-            this.midMarkLabel.Size = new System.Drawing.Size(151, 24);
+            this.midMarkLabel.Size = new System.Drawing.Size(206, 31);
             this.midMarkLabel.TabIndex = 4;
             this.midMarkLabel.Text = "Điểm Quá Trình";
             // 
@@ -124,10 +124,10 @@
             this.deleteButton.BackColor = System.Drawing.Color.White;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.deleteButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteButton.Location = new System.Drawing.Point(38, 304);
+            this.deleteButton.Location = new System.Drawing.Point(48, 380);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(170, 64);
+            this.deleteButton.Size = new System.Drawing.Size(212, 80);
             this.deleteButton.TabIndex = 5;
             this.deleteButton.Text = "Xoá dòng";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -138,10 +138,10 @@
             this.resetButton.BackColor = System.Drawing.Color.White;
             this.resetButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.resetButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetButton.Location = new System.Drawing.Point(38, 387);
+            this.resetButton.Location = new System.Drawing.Point(48, 484);
             this.resetButton.Margin = new System.Windows.Forms.Padding(2);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(170, 64);
+            this.resetButton.Size = new System.Drawing.Size(212, 80);
             this.resetButton.TabIndex = 6;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = false;
@@ -153,10 +153,10 @@
             this.copyrightLabel.AutoSize = true;
             this.copyrightLabel.BackColor = System.Drawing.Color.Transparent;
             this.copyrightLabel.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.copyrightLabel.Location = new System.Drawing.Point(76, 637);
+            this.copyrightLabel.Location = new System.Drawing.Point(95, 796);
             this.copyrightLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.copyrightLabel.Name = "copyrightLabel";
-            this.copyrightLabel.Size = new System.Drawing.Size(337, 40);
+            this.copyrightLabel.Size = new System.Drawing.Size(421, 50);
             this.copyrightLabel.TabIndex = 8;
             this.copyrightLabel.Text = "Copyright © 2023 by ";
             // 
@@ -166,13 +166,13 @@
             this.ulsaitLinkLabel.AutoSize = true;
             this.ulsaitLinkLabel.BackColor = System.Drawing.Color.Transparent;
             this.ulsaitLinkLabel.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ulsaitLinkLabel.Location = new System.Drawing.Point(417, 637);
+            this.ulsaitLinkLabel.Location = new System.Drawing.Point(521, 796);
             this.ulsaitLinkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ulsaitLinkLabel.Name = "ulsaitLinkLabel";
-            this.ulsaitLinkLabel.Size = new System.Drawing.Size(159, 40);
+            this.ulsaitLinkLabel.Size = new System.Drawing.Size(200, 50);
             this.ulsaitLinkLabel.TabIndex = 10;
             this.ulsaitLinkLabel.TabStop = true;
-            this.ulsaitLinkLabel.Text = "USLA IT";
+            this.ulsaitLinkLabel.Text = "ULSA IT";
             this.ulsaitLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ulsaitLinkLabel_LinkClicked);
             // 
             // label1
@@ -181,10 +181,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(580, 637);
+            this.label1.Location = new System.Drawing.Point(725, 796);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 40);
+            this.label1.Size = new System.Drawing.Size(352, 50);
             this.label1.TabIndex = 10;
             this.label1.Text = "All right reserved.";
             // 
@@ -195,11 +195,11 @@
             this.groupBox1.Controls.Add(this.listResultListBox);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(316, 61);
+            this.groupBox1.Location = new System.Drawing.Point(395, 76);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(628, 222);
+            this.groupBox1.Size = new System.Drawing.Size(785, 278);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Các Môn Học";
@@ -208,11 +208,11 @@
             // 
             this.listResultListBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listResultListBox.FormattingEnabled = true;
-            this.listResultListBox.ItemHeight = 23;
-            this.listResultListBox.Location = new System.Drawing.Point(393, 31);
+            this.listResultListBox.ItemHeight = 29;
+            this.listResultListBox.Location = new System.Drawing.Point(491, 39);
             this.listResultListBox.Margin = new System.Windows.Forms.Padding(2);
             this.listResultListBox.Name = "listResultListBox";
-            this.listResultListBox.Size = new System.Drawing.Size(225, 165);
+            this.listResultListBox.Size = new System.Drawing.Size(280, 178);
             this.listResultListBox.TabIndex = 8;
             this.listResultListBox.SelectedIndexChanged += new System.EventHandler(this.ListBox_SelectedIndexChanged);
             // 
@@ -221,7 +221,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.Location = new System.Drawing.Point(359, 512);
+            this.panel1.Location = new System.Drawing.Point(449, 640);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
@@ -232,7 +232,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.AutoSize = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel2.Location = new System.Drawing.Point(359, 512);
+            this.panel2.Location = new System.Drawing.Point(449, 640);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 0);
@@ -243,10 +243,10 @@
             this.summaryButton.BackColor = System.Drawing.Color.White;
             this.summaryButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.summaryButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.summaryButton.Location = new System.Drawing.Point(38, 465);
+            this.summaryButton.Location = new System.Drawing.Point(48, 581);
             this.summaryButton.Margin = new System.Windows.Forms.Padding(2);
             this.summaryButton.Name = "summaryButton";
-            this.summaryButton.Size = new System.Drawing.Size(170, 64);
+            this.summaryButton.Size = new System.Drawing.Size(212, 80);
             this.summaryButton.TabIndex = 7;
             this.summaryButton.Text = "Kết quả";
             this.summaryButton.UseVisualStyleBackColor = false;
@@ -258,30 +258,30 @@
             this.lastMarkLabel.BackColor = System.Drawing.Color.Transparent;
             this.lastMarkLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastMarkLabel.ForeColor = System.Drawing.Color.Black;
-            this.lastMarkLabel.Location = new System.Drawing.Point(34, 98);
+            this.lastMarkLabel.Location = new System.Drawing.Point(42, 122);
             this.lastMarkLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastMarkLabel.Name = "lastMarkLabel";
-            this.lastMarkLabel.Size = new System.Drawing.Size(136, 24);
+            this.lastMarkLabel.Size = new System.Drawing.Size(181, 31);
             this.lastMarkLabel.TabIndex = 13;
             this.lastMarkLabel.Text = "Điểm Cuối Kỳ";
             // 
             // lastMarkTextBox
             // 
             this.lastMarkTextBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastMarkTextBox.Location = new System.Drawing.Point(195, 92);
+            this.lastMarkTextBox.Location = new System.Drawing.Point(244, 115);
             this.lastMarkTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.lastMarkTextBox.Name = "lastMarkTextBox";
-            this.lastMarkTextBox.Size = new System.Drawing.Size(54, 29);
+            this.lastMarkTextBox.Size = new System.Drawing.Size(66, 34);
             this.lastMarkTextBox.TabIndex = 2;
             this.lastMarkTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
             // creditsTextBox
             // 
             this.creditsTextBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creditsTextBox.Location = new System.Drawing.Point(195, 137);
+            this.creditsTextBox.Location = new System.Drawing.Point(244, 171);
             this.creditsTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.creditsTextBox.Name = "creditsTextBox";
-            this.creditsTextBox.Size = new System.Drawing.Size(54, 29);
+            this.creditsTextBox.Size = new System.Drawing.Size(66, 34);
             this.creditsTextBox.TabIndex = 3;
             this.creditsTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MarkTextBox_KeyPress);
             // 
@@ -291,10 +291,10 @@
             this.creditsLabel.BackColor = System.Drawing.Color.Transparent;
             this.creditsLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditsLabel.ForeColor = System.Drawing.Color.Black;
-            this.creditsLabel.Location = new System.Drawing.Point(36, 142);
+            this.creditsLabel.Location = new System.Drawing.Point(45, 178);
             this.creditsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.creditsLabel.Name = "creditsLabel";
-            this.creditsLabel.Size = new System.Drawing.Size(103, 24);
+            this.creditsLabel.Size = new System.Drawing.Size(141, 31);
             this.creditsLabel.TabIndex = 16;
             this.creditsLabel.Text = "Số Tín Chỉ";
             // 
@@ -303,11 +303,11 @@
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.summaryListBox);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(306, 331);
+            this.groupBox2.Location = new System.Drawing.Point(382, 414);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(628, 222);
+            this.groupBox2.Size = new System.Drawing.Size(785, 278);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tổng Kết";
@@ -317,11 +317,11 @@
             this.summaryListBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.summaryListBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.summaryListBox.FormattingEnabled = true;
-            this.summaryListBox.ItemHeight = 23;
-            this.summaryListBox.Location = new System.Drawing.Point(11, 31);
+            this.summaryListBox.ItemHeight = 29;
+            this.summaryListBox.Location = new System.Drawing.Point(14, 39);
             this.summaryListBox.Margin = new System.Windows.Forms.Padding(2);
             this.summaryListBox.Name = "summaryListBox";
-            this.summaryListBox.Size = new System.Drawing.Size(607, 165);
+            this.summaryListBox.Size = new System.Drawing.Size(758, 178);
             this.summaryListBox.TabIndex = 9;
             // 
             // label2
@@ -330,10 +330,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(34, 179);
+            this.label2.Location = new System.Drawing.Point(42, 224);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 19);
+            this.label2.Size = new System.Drawing.Size(269, 22);
             this.label2.TabIndex = 17;
             this.label2.Text = "( Dùng dấu . để viết điểm phẩy )";
             // 
@@ -343,21 +343,21 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(713, 285);
+            this.label3.Location = new System.Drawing.Point(891, 356);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 22);
+            this.label3.Size = new System.Drawing.Size(273, 28);
             this.label3.TabIndex = 18;
             this.label3.Text = "Dưới 1.0 hệ 4 là tạch nha!";
             // 
             // Dashboard
             // 
             this.AcceptButton = this.insertDataButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1317, 705);
+            this.ClientSize = new System.Drawing.Size(1646, 881);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.copyrightLabel);
